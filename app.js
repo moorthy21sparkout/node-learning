@@ -17,7 +17,7 @@ app.use(express.json());
 // Routes
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/products', require('./routes/productRoutes'));
-
+app.use('/api/students', require('./routes/studentRoutes'));
 // Basic route for testing server
 app.get('/', (req, res) => {
     res.send('API Running...');
